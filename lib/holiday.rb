@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
         word.capitalize!
       end
     capitolizedVersion = array.join(' ')
-    puts "# {capitolizedVersion}: #{attributes.join(', ')}"
+    puts "    #{capitolizedVersion}: #{attributes.join(', ')}"
     end
   end
 end
