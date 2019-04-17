@@ -27,11 +27,10 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash.each do |season, holiday|
     if season == :winter
       holiday.each do |holiday, attribute|
-        winterArray<<attribute
+        puts attribute
       end
     end
   end
-  winterArray
 end
 
 def all_holidays_with_bbq(holiday_hash)
