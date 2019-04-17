@@ -23,12 +23,15 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
+  winterArray = []
   holiday_hash.each do |season, holiday|
     if season == :winter
-      puts holiday_hash[season][holiday]
+      holiday.each do |holiday, attribute|
+        winterArray<<attribute
+      end
     end
   end
-  holiday_hash
+  winterArray
 end
 
 def all_holidays_with_bbq(holiday_hash)
